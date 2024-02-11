@@ -74,7 +74,7 @@ class PostRepository extends Repository
 	{
 		$updatedAt = date('Y-m-d H:i:s');
 		$sqlStatement = $this->pdo->prepare("UPDATE posts SET title=?, body=?, updated_at=? WHERE id=?");
-		$result = $sqlStatement->execute([$body, $title, $updatedAt, $id]);
+		$result = $sqlStatement->execute([$title, $body, $updatedAt, $id]);
 		return $result;
 	}
 
