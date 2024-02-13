@@ -26,7 +26,7 @@ class Repository
 		$this->hostname = 'localhost';
 		$this->username = 'root';
 		$this->databaseName = 'posts_web_app';
-		$this->databasePassword = '@6TrYm*E';
+		$this->databasePassword = '';
 		$this->charset = 'utf8mb4';
 		$dsn = "mysql:host=$this->hostname;dbname=$this->databaseName;charset=$this->charset";
 		$options = [
